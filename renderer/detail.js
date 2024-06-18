@@ -21,6 +21,7 @@
  *   
  */
 
+//TODO: Need to refactor.
 document.addEventListener('DOMContentLoaded', () => {
     const rowID = window.localStorage.getItem('rowID');
     console.log(rowID);
