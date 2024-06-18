@@ -1,11 +1,13 @@
 /**
- * @file        main.js
- * @description Main process script for the Electron application. This script initializes the main application window and handles the main process lifecycle events.
- * @version     1.0.0
- * @date        2024-06-18
- * @modified    2024-06-18
- * @author      Wes-Leigh Viljoen
- * @contact     wesleighviljoen@gmail.com
+ * @file                main.js
+ * @description         Main process script for the Electron application. This script initializes the main application window and handles the main process lifecycle events.
+ * @version             1.0.1
+ * @date                2024-06-18
+ * @modified            2024-06-18
+ * @author              Wes-Leigh Viljoen
+ * @contact             wesleighviljoen@gmail.com
+ * @Co-Monkey           Gavin Coertzen
+ * @Co-Monkey Email     gcoertzen@gmail.com
  *
  * @license     TBA
  * 
@@ -17,7 +19,8 @@
  *   Ensure that all required dependencies are installed before running this script.
  * 
  * @changelog
- *   - 1.0.0: Initial release.
+ *      - 1.0.0: Initial release.
+ *      - 1.0.1: Added the monkey's name
  *   
  */
 
