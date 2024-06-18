@@ -34,6 +34,7 @@ const { fetchTableData, updateRowData } = require('./scripts/queries');
 
 let mainWindow;
 
+// TODO: @GavinCZA can we make this able to load from a config file. I can give example of file for you.
 function createMainWindow() {
     mainWindow = new BrowserWindow({
         width: 1600,
