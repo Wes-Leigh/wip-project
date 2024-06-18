@@ -23,14 +23,16 @@
 const mysql = require('mysql2');
 let primaryConnection, backupConnection;
 
-// TODO: Implement .env file
+// We have two connections to the server as to avoid any issues with dns etc...
+// TODO: Implement .env file @Wes-Leigh/@GavinCZA
 function connectToPrimaryDatabase() {
     primaryConnection = mysql.createConnection({
         host: 'office-server',
         user: 'electronApp',
         password: '1ser@er5',
         database: 'linc_management',
-        port: '3306'
+        port: '3306',
+        namedPlaceholders: true
     });
 
     primaryConnection.connect((err) => {
@@ -43,12 +45,15 @@ function connectToPrimaryDatabase() {
     });
 }
 
+// TODO: Implement .env file @Wes-Leigh/@GavinCZA
 function connectToBackupDatabase() {
     backupConnection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'password',
-        database: 'backup_database'
+        host: '100.113.125.14',
+        user: 'electronApp',
+        password: '1ser@er5',
+        database: 'linc_management',
+        port: '3306',
+        namedPlaceholders: true
     });
 
     backupConnection.connect((err) => {

@@ -24,7 +24,6 @@
 //TODO: Need to refactor.
 document.addEventListener('DOMContentLoaded', () => {
     const rowID = window.localStorage.getItem('rowID');
-    console.log(rowID);
     if (rowID) {
         // Fetch data for the specific row (You may need to add a method to fetch a single row's data)
         fetchRowData(rowID).then((rowData) => {
