@@ -21,6 +21,7 @@
  * @changelog
  *      - 1.0.0: Initial release.
  *      - 1.0.1: Added the monkey's name
+ *      - 1.0.1: Added App size under Create Window Function
  *   
  */
 
@@ -33,6 +34,8 @@ let mainWindow;
 
 function createMainWindow() {
     mainWindow = new BrowserWindow({
+        width: 1600,
+        height: 1000,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true, // Recommended for security
