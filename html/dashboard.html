@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .main-menu {
+            height: 80px;
+            top: 0;
+            left: 0;
+            background-color: #f8f9fa;
+            /*f8f9fa */
+            padding: 20px 0 20px 10px;
+        }
+
+        .content {
+            margin-left: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- MAIN HEADER ACCROSS THE WHOLE APPLICATION-->
+        <div class="row main-menu">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="usersadmin.html">User Management</a>
+                </li>
+                <!-- Additional dynamic sidebar items from database -->
+            </ul>
+        </div><!-- END OF HEADER AND MENUS -->
+
+        <!-- BODY INFORMATION POPULATED BY DATABASE -->
+        <div class="row">
+            <main role="main" class="content col-md-9 col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">IMS Dashboard</h1>
+                </div>
+
+                <div class="row" id="#">
+                    <!-- Information to be added here -->
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../renderer/index.js"></script>
+</body>
+
+</html>

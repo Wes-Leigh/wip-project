@@ -41,6 +41,6 @@ function displayTable(data) {
 }
 
 function loadDetailView(id) {
-    window.electronAPI.navigate('detail.html');
+    window.electronAPI.navigate('usersdetail.html');
     window.localStorage.setItem('rowID', id);
 }

@@ -1,0 +1,12 @@
+-1.0.2 - Made changes to the following pages:
+HTML: 
+Renamed - original Index to usersadmin.html
+Renamed - details to userdetails.html
+Created - dashboard.html for main dashboard landing pages
+Index page to become login page for the application
+
+reneders: 
+    Updated renderers to point to new pages as above.
+
+CSS: 
+    Added new menu structure to be followed over the whole application. 
