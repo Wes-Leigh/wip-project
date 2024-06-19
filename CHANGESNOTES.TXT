@@ -1,0 +1,36 @@
+-1.0.2 - Made changes to the following pages:
+HTML: 
+Renamed - original Index to usersadmin.html - Dont need usersadmin, everything can be done on db for now. Lets focus on userside.
+Renamed - details to userdetails.html
+Created - dashboard.html for main dashboard landing pages - Please see notes below.
+Index page to become login page for the application - Happy here will get this working..
+
+reneders: 
+    Updated renderers to point to new pages as above.
+
+CSS: 
+    Added new menu structure to be followed over the whole application. 
+
+File Movements: Moved this file to main Directory
+
+Notes:
+
+    I would like a main menu on the side:
+                Add Order
+                Recieve Stock
+                View Job Tickects
+                Settings
+                Exit
+
+    dashboard.html :
+        We will hide the context menu as its not needed.
+        The dashboard screen must have the backorder table on display.
+            With this I would like a search option on top, would like to also select what im using to search with a drop down maybe?
+
+        We will add a timer to refresh data - Discussion from last night
+        Each line will be clickable to edit record, except the job card number field. This should display the whole order. 
+
+    Add Order Page: I will try show what I want here, as we will need to add several lines at a time but increment the order in a way,
+                !! Bonus for later we will try OCR here.
+
+    
