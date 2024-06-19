@@ -26,10 +26,10 @@
     <div class="container login-container">
         
         <h2 class="text-center mb-4">Login</h2>
-        <form>
+        <div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                <label for="userName" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="userName" aria-describedby="User Name" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
@@ -39,8 +39,8 @@
                 <input type="checkbox" class="form-check-input" id="rememberMe">
                 <label class="form-check-label" for="rememberMe">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
-        </form>
+            <button type="button" class="btn btn-primary w-100" onclick="logIn()">Login</button>
+        </div>
         <div class="text-center mt-3">
             <a href="#">Forgot your password?</a>
         </div>

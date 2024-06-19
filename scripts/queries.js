@@ -36,6 +36,19 @@ async function fetchTableData(id = 0) {
     });
 }
 
+function logInChecks(userDetails) {
+    const connection = getConnection();
+    const query = 'SELECT ID FROM login WHERE UserName = ? AND Password = ?';
+    connection.execute(query, [userDetails.userName, userDetails.password], (error, results) => {
+        if (error) {
+          console.error('Error executing query:', error);
+          return;
+        }
+        if (results.length < 1) return 0;
+        return results[0].ID;
+      });
+}
+
 function updateRowData(updatedData) {
     const connection = getConnection();
     const { ID, UserName, Password, isActive } = updatedData;
@@ -72,6 +85,7 @@ function selectAllQuery(table, data = ['null', 0]) {
     );
 }
 
+
 // selectUser stored procedure
 async function selectUser(userID) {
     
@@ -106,5 +120,6 @@ async function selectUser(userID) {
 module.exports = {
     fetchTableData,
     updateRowData,
-    selectUser
+    selectUser,
+    logInChecks
 };

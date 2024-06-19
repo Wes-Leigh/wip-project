@@ -26,5 +26,6 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('electronAPI', {
     fetchTableData: (id) => ipcRenderer.invoke('fetch-table-data', id),
     saveDetails: (updatedData) => ipcRenderer.send('save-details', updatedData),
+    logInCheck: (userDetails) => ipcRenderer.invoke('log-in-user', userDetails),
     navigate: (view) => ipcRenderer.send('navigate', view)
 });

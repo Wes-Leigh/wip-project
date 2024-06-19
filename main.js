@@ -30,7 +30,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const { connectToPrimaryDatabase } = require('./scripts/connection');
-const { fetchTableData, updateRowData, selectUser } = require('./scripts/queries');
+const { fetchTableData, updateRowData, selectUser, logInChecks } = require('./scripts/queries');
 
 let mainWindow;
 
@@ -70,8 +70,11 @@ app.on('activate', () => {
 });
 
 ipcMain.handle('fetch-table-data', (event, id) => {
-    selectUser(2);
     return fetchTableData(id);
+});
+
+ipcMain.handle('log-in-user', (event, userDetails) => {
+    return logInChecks(userDetails);
 });
 
 ipcMain.on('save-details', (event, updatedData) => {
