@@ -4,11 +4,50 @@
     <title>Electron MySQL App</title>
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .login-container {
+            max-width: 360px;
+            width: 100%;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        .form-control {
+            border-radius: 50px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Main Login Page to come here.</h1>
-        <a href="usersadmin.html">To the users admin page.</a>
+    <div class="container login-container">
+        
+        <h2 class="text-center mb-4">Login</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="#">Forgot your password?</a>
+        </div>
+        <div class="text-center mt-2">
+            <a href="#">Don't have an account? Sign up</a>
+        </div>
+        <a href="dashboard.html" class="btn btn-danger">Skip to the users admin page.</a>
     </div>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
